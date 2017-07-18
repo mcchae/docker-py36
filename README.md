@@ -14,3 +14,5 @@ with [python:3.6-alpine Dockerfile](https://github.com/docker-library/python/blo
 * user : `toor`
 * passwd : `r`
 
+## cmd
+Default CMD is sshd.
