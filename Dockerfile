@@ -2,7 +2,7 @@ FROM python:3.6-alpine
 MAINTAINER MoonChang Chae mcchae@gmail.com
 LABEL Description="alpine python 3.6 openssh server"
 
-RUN apk --update add tzdata openssh bash netcat-openbsd sudo && \
+RUN apk --update add tzdata openssh bash netcat-openbsd sudo busybox-suid && \
     cp -f /usr/share/zoneinfo/Asia/Seoul /etc/localtime && \
     echo "Asia/Seoul" > /etc/timezone && \
     date && \
